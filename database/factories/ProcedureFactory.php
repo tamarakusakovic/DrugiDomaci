@@ -14,7 +14,9 @@ class ProcedureFactory extends Factory
     public function definition()
     {
         return [
-            //
+            'laboratory_id' => $this->faker->numberBetween(1, 10),
+            'price' => $this->faker->numberBetween(1000, 7000),
+            'analysis_id' => $this->faker->numberBetween(1, 10)
         ];
     }
 }

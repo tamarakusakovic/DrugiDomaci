@@ -14,7 +14,8 @@ class AnalysisFactory extends Factory
     public function definition()
     {
         return [
-            //
+            'name' => $this->faker->word,
+            'description' => $this->faker->realText(150)
         ];
     }
 }

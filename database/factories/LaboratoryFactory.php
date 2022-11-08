@@ -14,7 +14,10 @@ class LaboratoryFactory extends Factory
     public function definition()
     {
         return [
-            //
+            'name' => $this->faker->catchPhrase,
+            'city' => $this->faker->city,
+            'address' => $this->faker->address,
+            'phone' => $this->faker->phoneNumber
         ];
     }
 }

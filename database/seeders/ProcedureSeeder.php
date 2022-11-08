@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+use App\Models\Procedure;
 use Illuminate\Database\Seeder;
 
 class ProcedureSeeder extends Seeder
@@ -13,6 +14,6 @@ class ProcedureSeeder extends Seeder
      */
     public function run()
     {
-        //
+        Procedure::factory(20)->create();
     }
 }
